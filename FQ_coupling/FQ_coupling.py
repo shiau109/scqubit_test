@@ -121,8 +121,8 @@ def calculate_readout(C, EJ, fr):
         
 
 if __name__ == '__main__':
-    filename = "Capacitance_2x2FQ.csv"
-    #filename = r"C:\Users\linyc\Documents\Q3D\2FQ1FC-H.csv"
+    #filename = "Capacitance_2x2FQ.csv"
+    filename = "2FQ1FC-H.csv"
 
     C = load_maxwell_C_matrix(filename)
     freq, g_ij, Ec, zeta = calculate_freq_and_gij(C, EJ=16, print_result=True)
